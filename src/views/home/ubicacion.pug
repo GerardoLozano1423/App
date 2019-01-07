@@ -1,0 +1,140 @@
+
+extends ../partials/headerHome
+
+block content
+    script(type='text/javascript', src='scripts/ubicacion.js')
+    // This is the page preloader. Replace border-highlight with the color you want for the border
+    #page-preloader
+      .loader-main
+        .preload-spinner.border-highlight
+    // This is the main page id. This is required and absolutely all content except for the preloader goes here
+    #page
+      // Page header. Can be header-logo-app, header-logo-right, header-logo-center o header-logo-left
+      .header.header-fixed.header-logo-app
+        a.header-title(href='#') Ubicacion
+        a.header-icon.header-icon-1(href='#', data-back-button='')
+          i.fa.fa-arrow-left
+        a.header-icon.header-icon-2(href='#', data-menu='menu-2')
+          i.fas.fa-cog
+        a.header-icon.header-icon-3(href='#', data-toggle-theme='')
+          i.fas.fa-moon
+        a.header-icon.header-icon-4(href='#', data-menu='menu-bookmarks')
+          i.fas.fa-bookmark.color-red2-dark
+      // menus, action sheets, action modals, toasts and snackbars go here outside the page-content
+      #menu-1.menu.menu-box-left(data-menu-width='250', data-menu-load='menu.html', data-menu-effect='menu-over', data-menu-select='page-home')
+      // All content except the menus, action modals, toasts and snackbars goes inside the page-content
+      // you can add header-clear / header-clear-small / header-clear-medium / header-clear-large
+      // to add a space between the top and the page header
+      .page-content.header-clear-medium
+        // the content class makes a left and right margin
+        .content
+          h2.bolder Start Here
+          p
+            | Check the included documentation file and start adding your components here. It's really simple.
+        // this is the page footer. just copy paste it at the end of your page-content
+        .footer
+          a.footer-title(href='#')
+            span.color-highlight EAZY
+            | MOBILE
+          p.footer-text
+            | Experience and customer care is what define Enabled products. Our products and support are unmatched.
+          .footer-socials
+            a.round-tiny.shadow-medium.bg-facebook(href='#')
+              i.fab.fa-facebook-f
+            a.round-tiny.shadow-medium.bg-twitter(href='#')
+              i.fab.fa-twitter
+            a.round-tiny.shadow-medium.bg-phone(href='#')
+              i.fa.fa-phone
+            a.round-tiny.shadow-medium.bg-red2-dark(href='#', data-menu='menu-share')
+              i.fa.fa-share-alt
+            a.back-to-top.round-tiny.shadow-medium.bg-dark1-light(href='#')
+              i.fa.fa-angle-up
+            .clear
+          p.footer-copyright
+            | Copyright © Enabled 
+            span#copyright-year 2017
+            | . All Rights Reserved.
+        // end of page content
+        // menus, action sheets, action modals, toasts and snackbars go here outside the page-content
+        #menu-share.menu.menu-box-bottom(data-menu-height='310', data-menu-effect='menu-parallax')
+          .link-list.link-list-1.content.bottom-0
+            a.shareToFacebook(href='#')
+              i.font-18.fab.fa-facebook.color-facebook
+              span.font-13 Facebook
+              i.fa.fa-angle-right
+            a.shareToTwitter(href='#')
+              i.font-18.fab.fa-twitter-square.color-twitter
+              span.font-13 Twitter
+              i.fa.fa-angle-right
+            a.shareToLinkedIn(href='#')
+              i.font-18.fab.fa-linkedin.color-linkedin
+              span.font-13 LinkedIn
+              i.fa.fa-angle-right
+            a.shareToGooglePlus(href='#')
+              i.font-18.fab.fa-google-plus-square.color-google
+              span.font-13 Google +
+              i.fa.fa-angle-right
+            a.shareToWhatsApp(href='#')
+              i.font-18.fab.fa-whatsapp-square.color-whatsapp
+              span.font-13 WhatsApp
+              i.fa.fa-angle-right
+            a.shareToMail.no-border(href='#')
+              i.font-18.fa.fa-envelope-square.color-mail
+              span.font-13 Email
+              i.fa.fa-angle-right
+        // menus, action sheets, action modals, toasts and snackbars go here outside the page-content
+        #menu-2.menu.menu-box-right(data-menu-width='75', data-menu-effect='menu-over')
+          .highlight-changer
+            a(href='#', data-change-highlight='red1')
+              i.fa.fa-circle.color-red1-dark
+              span.color-red2-light Red
+            a(href='#', data-change-highlight='orange')
+              i.fa.fa-circle.color-orange-dark
+              span.color-orange-light Orange
+            a(href='#', data-change-highlight='pink2')
+              i.fa.fa-circle.color-pink2-dark
+              span.color-pink2-light Pink
+            a(href='#', data-change-highlight='magenta2')
+              i.fa.fa-circle.color-magenta2-dark
+              span.color-magenta2-light Purple
+            a(href='#', data-change-highlight='blue2')
+              i.fa.fa-circle.color-blue2-dark
+              span.color-blue2-light Blue
+            a(href='#', data-change-highlight='aqua')
+              i.fa.fa-circle.color-aqua-dark
+              span.color-aqua-light Aqua
+            a(href='#', data-change-highlight='teal')
+              i.fa.fa-circle.color-teal-dark
+              span.color-teal-light Teal
+            a(href='#', data-change-highlight='mint')
+              i.fa.fa-circle.color-mint-dark
+              span.color-mint-light Mint
+            a(href='#', data-change-highlight='green2')
+              i.fa.fa-circle.color-green2-dark
+              span.color-green2-light Green
+            a(href='#', data-change-highlight='green1')
+              i.fa.fa-circle.color-green1-dark
+              span.color-green1-light Grass
+            a(href='#', data-change-highlight='yellow2')
+              i.fa.fa-circle.color-yellow2-dark
+              span.color-yellow2-light Sunny
+            a(href='#', data-change-highlight='yellow1')
+              i.fa.fa-circle.color-yellow1-dark
+              span.color-yellow1-light Goldish
+            a(href='#', data-change-highlight='brown1')
+              i.fa.fa-circle.color-brown1-dark
+              span.color-brown1-light Wood
+            a(href='#', data-change-highlight='brown2')
+              i.fa.fa-circle.color-brown2-dark
+              span.color-brown2-light Earth
+            a(href='#', data-change-highlight='dark1')
+              i.fa.fa-circle.color-dark1-dark
+              span.color-dark1-light Night
+            a(href='#', data-change-highlight='dark2')
+              i.fa.fa-circle.color-dark2-dark
+              span.color-dark2-light Dark
+            a(href='#', data-change-highlight='gray2')
+              i.fa.fa-circle.color-gray2-dark
+              span.color-gray2-light Gray
+        // this must be added. The menu hider will show teh dark overlay when the menu is open
+        .menu-hider

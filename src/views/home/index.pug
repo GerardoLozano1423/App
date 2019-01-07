@@ -1,0 +1,112 @@
+
+extends ../partials/headerHome
+
+block content
+    #page-preloader
+      .loader-main
+        .preload-spinner.border-highlight
+    #page
+      #menu-1.menu.menu-box-left(data-menu-width='250', data-menu-load='menu', data-menu-effect='menu-over', data-menu-select='page-home')
+      .page-content.shadow-none
+        .caption.bottom-0(data-height='cover')
+          .caption-center
+            .landing-page
+              .landing-header
+                h1.center-text.font-30.ultrabold.color-theme APP
+                // replace image if you want to use a logo <a href="#"><img src="images/logo-light.png" alt="img"></a>
+                em.font-11.color-theme.opacity-60 Beatutiful Interfaces  & Powerful Code
+              .landing-icons.color-theme
+                a(href='/logout')
+                  i.bg-yellow1-dark.shadow-icon-large.fa.fa-arrow-left
+                  em.color-theme Logout
+                a(href='/ubicacion')
+                  i.bg-blue2-dark.shadow-icon-large.fa.fa-cog
+                  em.color-theme Ubicacion
+                a(href='navigations.html')
+                  i.bg-red2-light.shadow-icon-large.fa.fa-bars
+                  em.color-theme Menus
+                a(href='media.html')
+                  i.bg-blue1-light.shadow-icon-large.fa.fa-camera
+                  em.color-theme Gallery
+                a(href='media.html')
+                  i.bg-orange-light.shadow-icon-large.fa.fa-image
+                  em.color-theme Portfolio
+                a(href='pages.html')
+                  i.bg-brown2-light.shadow-icon-large.fa.fa-file
+                  em.color-theme Pages
+                a(href='pageapps.html')
+                  i.bg-mint-light.shadow-icon-large.fa.fa-mobile-alt
+                  em.color-theme AppStyled
+                a(href='portfolios.html')
+                  i.bg-magenta2-light.shadow-icon-large.fa.fa-list
+                  em.color-theme Templates
+                a(href='page-contact.html')
+                  i.bg-green1-dark.shadow-icon-large.fa.fa-envelope
+                  em.color-theme Contact
+                .clear
+              .landing-footer
+                p.center-text.bottom-0
+                  a.icon.icon-xxs.icon-circle.bg-facebook(href='#')
+                    i.fab.fa-facebook
+                  a.icon.icon-xxs.icon-circle.left-10.right-15.bg-twitter(href='#')
+                    i.fab.fa-twitter
+                  a.icon.icon-xxs.icon-circle.bg-google(href='#')
+                    i.fab.fa-google
+                span.center-text.color-theme.font-10.opacity-40
+                  | Copyright 
+                  span.copyright-year
+                  |  Enabled. All rights Reserved
+      #menu-2.menu.menu-box-right(data-menu-width='75', data-menu-effect='menu-over')
+        .highlight-changer
+          a(href='#', data-change-highlight='red1')
+            i.fa.fa-circle.color-red1-dark
+            span.color-red2-light Red
+          a(href='#', data-change-highlight='orange')
+            i.fa.fa-circle.color-orange-dark
+            span.color-orange-light Orange
+          a(href='#', data-change-highlight='pink2')
+            i.fa.fa-circle.color-pink2-dark
+            span.color-pink2-light Pink
+          a(href='#', data-change-highlight='magenta2')
+            i.fa.fa-circle.color-magenta2-dark
+            span.color-magenta2-light Purple
+          a(href='#', data-change-highlight='blue2')
+            i.fa.fa-circle.color-blue2-dark
+            span.color-blue2-light Blue
+          a(href='#', data-change-highlight='aqua')
+            i.fa.fa-circle.color-aqua-dark
+            span.color-aqua-light Aqua
+          a(href='#', data-change-highlight='teal')
+            i.fa.fa-circle.color-teal-dark
+            span.color-teal-light Teal
+          a(href='#', data-change-highlight='mint')
+            i.fa.fa-circle.color-mint-dark
+            span.color-mint-light Mint
+          a(href='#', data-change-highlight='green2')
+            i.fa.fa-circle.color-green2-dark
+            span.color-green2-light Green
+          a(href='#', data-change-highlight='green1')
+            i.fa.fa-circle.color-green1-dark
+            span.color-green1-light Grass
+          a(href='#', data-change-highlight='yellow2')
+            i.fa.fa-circle.color-yellow2-dark
+            span.color-yellow2-light Sunny
+          a(href='#', data-change-highlight='yellow1')
+            i.fa.fa-circle.color-yellow1-dark
+            span.color-yellow1-light Goldish
+          a(href='#', data-change-highlight='brown1')
+            i.fa.fa-circle.color-brown1-dark
+            span.color-brown1-light Wood
+          a(href='#', data-change-highlight='brown2')
+            i.fa.fa-circle.color-brown2-dark
+            span.color-brown2-light Earth
+          a(href='#', data-change-highlight='dark1')
+            i.fa.fa-circle.color-dark1-dark
+            span.color-dark1-light Night
+          a(href='#', data-change-highlight='dark2')
+            i.fa.fa-circle.color-dark2-dark
+            span.color-dark2-light Dark
+          a(href='#', data-change-highlight='gray2')
+            i.fa.fa-circle.color-gray2-dark
+            span.color-gray2-light Gray
+      .menu-hider
