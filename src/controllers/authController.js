@@ -48,6 +48,7 @@ controller.login = (user, pass,done) => {
     connection.query(`select * from usuario where usuario = '${user}' AND password = '${pass}'`,function(err,rows){	
 
         if(rows.length == 1){
+            req.session.user = user;
             return done(null, user);
         }else{
             return done(null, false,{message: `El Usuario o Password Incorrectos`});
@@ -57,6 +58,10 @@ controller.login = (user, pass,done) => {
 
 controller.signup = (req, res) => {
     res.render('auth/signup');
+}
+
+controller.reset = (req, res) => {
+    res.render('auth/reset');
 }
 
 controller.createUser = (req, res) => {
@@ -70,12 +75,12 @@ controller.createUser = (req, res) => {
             conn.query(`SELECT * FROM usuario WHERE usuario = ${usuario}`, (err, rows) => {
                 if (rows === null){
                     
-                    res.send("Aqui");
+                    res.send("1");
                     return false;
                 }else{
                     const query = connection.query(sql, (err, customer) => {
                         //res.render('auth/index');
-                        res.send("Hola");
+                        res.send("0");
                     })
                 }
             });

@@ -2,7 +2,7 @@
 extends ../partials/headerHome
 
 block content
-    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBZBupOaNX5U25dG0aZ3GTcVh1LO_7ilZs&libraries=places&callback=initAutocomplete')
+    script(type='text/javascript', src='scripts/calificar.js')
     // This is the page preloader. Replace border-highlight with the color you want for the border
     #page-preloader
       .loader-main
@@ -11,7 +11,7 @@ block content
     #page
       // Page header. Can be header-logo-app, header-logo-right, header-logo-center o header-logo-left
       .header.header-fixed.header-logo-app
-        a.header-title(href='#') Ubicacion
+        a.header-title(href='#') Calificar Servicio
         a.header-icon.header-icon-1(href='#', data-back-button='')
           i.fa.fa-arrow-left
         a.header-icon.header-icon-2(href='#', data-menu='menu-2')
@@ -24,43 +24,26 @@ block content
       .page-content.header-clear-medium
         // the content class makes a left and right margin
         .content
-          .input-style.input-style-2.input-required
-            span Estado
-            em
-              i.fa.fa-angle-down
-            select#estado
-              option(value='default', disabled='', selected='') Seleccionar Estado
-          .input-style.input-style-2.input-required
-            span Municipio
-            em
-              i.fa.fa-angle-down
-            select#municipio
-              option(value='default', disabled='', selected='') Seleccionar Municipio
 
+            p.clasificacion
+                input#radio1(type='radio', name='estrellas', value='5')
+                label(for='radio1') ★
+                input#radio2(type='radio', name='estrellas', value='4')
+                label(for='radio2') ★
+                input#radio3(type='radio', name='estrellas', value='3')
+                label(for='radio3') ★
+                input#radio4(type='radio', name='estrellas', value='2')
+                label(for='radio4') ★
+                input#radio5(type='radio', name='estrellas', value='1')
+                label(for='radio5') ★
 
-          .input-style.input-style-2.has-icon.input-required
-            i.input-icon.fa.fa-map-marked-alt
-            span Direccion
-            input#direccion(type='text', placeholder='')
-
-            input#postal_code(type='text', placeholder='')
-            input#country(type='text', placeholder='')
-            input#street_number(type='text', placeholder='')
-            input#route(type='text', placeholder='')
-            input#locality(type='text', placeholder='')
-            input#administrative_area_level_1(type='text', placeholder='')
-          
-          .input-style.input-style-2.has-icon.input-required
-            i.input-icon.fa.fa-phone
-            span Telefono
-            input#telefono(type='tel', placeholder='',maxlength='10')
-          
-          .input-style.input-style-2.has-icon.input-required
-            i.input-icon.fa.fa-map-signs
-            span Referencias
-            input#referencias(type='text', placeholder='')
-          
-          a.button.button-3d.button-m.button-circle.shadow-small.border-blue2-dark.bg-blue2-light(href='#', style='width: 100%;text-align: center;', onclick='guardarDireccion();') Guardar Direccion
+            .form-field.form-text
+                label.contactMessageTextarea.color-theme(for='contactMessageTextarea')
+                | Message: 
+                span (required)
+                textarea#comentario.contactTextarea.requiredField(name='contactMessageTextarea')
+            
+            a.button.button-3d.button-m.button-circle.shadow-small.border-blue2-dark.bg-blue2-light(href='#', style='width: 100%;text-align: center;', onclick='guardarComentario();') Guardar Comentario
 
 
           

@@ -14,9 +14,9 @@ block content
 				label Password
 				input.form-control(type='password', id='pass-tf', name='pass')
 			#row1
-				button(type='button')#btn_remember.btn.btn-light.btn-left
-					span.fa.fa-check-square
-					| Remember Me
+				a(href='/auth/facebook/')
+					button(type='button')#btn_remember.btn.btn-light.btn-left
+						| Facebook
 				button(type='submit')#btn_sign_in.btn.btn-primary
 					span.fa.fa-lock
 					| Sign In
