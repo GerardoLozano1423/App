@@ -1,9 +1,9 @@
-# CRUD Nodejs and Mysql
-this is a basic application crud that uses nodejs in the backend, mysql as database.
+# Instalar Dependencias NPM
+- 'npm install'
+# Iniciar Servidor
+- 'npm run dev'
 
-# Usefull Commands
-- to init mysql: `mysql -u root -p`
+# Claves BD en src/app.js y src/controllers/authController.js
+- to init mysql: `host : 'localhost',user : 'root', password : '12345',`
 
-# links
-- [bootstrap 4 theme](https://bootswatch.com/4/lux/bootstrap.min.css)
 # App
